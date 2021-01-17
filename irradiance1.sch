@@ -1,0 +1,816 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Irradiance_board_parts:Nucleo_L432KC U2
+U 1 1 5FAA17C6
+P 5500 2650
+F 0 "U2" H 5500 2765 50  0000 C CNN
+F 1 "Nucleo_L432KC" H 5500 2674 50  0000 C CNN
+F 2 "irradianceboard:MODULE_NUCLEO-L432KC" H 5500 950 50  0001 C CNN
+F 3 "" H 5500 950 50  0001 C CNN
+	1    5500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FAA712C
+P 3500 3450
+F 0 "D2" H 3493 3667 50  0000 C CNN
+F 1 "HEARTBEAT" H 3493 3576 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 3500 3450 50  0001 C CNN
+F 3 "~" H 3500 3450 50  0001 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FAA6D42
+P 3500 3000
+F 0 "D1" H 3493 3217 50  0000 C CNN
+F 1 "CAN_RX" H 3493 3126 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 3500 3000 50  0001 C CNN
+F 3 "~" H 3500 3000 50  0001 C CNN
+	1    3500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D0
+U 1 1 5FAA5C73
+P 3500 2500
+F 0 "D0" H 3493 2717 50  0000 C CNN
+F 1 "CAN_TX" H 3493 2626 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 3500 2500 50  0001 C CNN
+F 3 "~" H 3500 2500 50  0001 C CNN
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2500 4350 2500
+Wire Wire Line
+	4350 2500 4350 3200
+Wire Wire Line
+	4350 3200 5150 3200
+Wire Wire Line
+	3650 3000 4100 3000
+Wire Wire Line
+	4100 3000 4100 4000
+Wire Wire Line
+	4100 4000 5150 4000
+$Comp
+L Device:R R0
+U 1 1 5FAA9871
+P 3200 2500
+F 0 "R0" V 2993 2500 50  0000 C CNN
+F 1 "330" V 3084 2500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3130 2500 50  0001 C CNN
+F 3 "~" H 3200 2500 50  0001 C CNN
+	1    3200 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FAAA8A8
+P 3200 3450
+F 0 "R2" V 2993 3450 50  0000 C CNN
+F 1 "330" V 3084 3450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3130 3450 50  0001 C CNN
+F 3 "~" H 3200 3450 50  0001 C CNN
+	1    3200 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FAAA338
+P 3200 3000
+F 0 "R1" V 2993 3000 50  0000 C CNN
+F 1 "330" V 3084 3000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3130 3000 50  0001 C CNN
+F 3 "~" H 3200 3000 50  0001 C CNN
+	1    3200 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FAAB1FC
+P 2900 3550
+F 0 "#PWR0101" H 2900 3300 50  0001 C CNN
+F 1 "GND" H 2905 3377 50  0000 C CNN
+F 2 "" H 2900 3550 50  0001 C CNN
+F 3 "" H 2900 3550 50  0001 C CNN
+	1    2900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3550 2900 3450
+Wire Wire Line
+	2900 3450 3050 3450
+Wire Wire Line
+	2900 3450 2900 3000
+Wire Wire Line
+	2900 2500 3050 2500
+Connection ~ 2900 3450
+Wire Wire Line
+	3050 3000 2900 3000
+Connection ~ 2900 3000
+Wire Wire Line
+	2900 3000 2900 2500
+Wire Wire Line
+	3650 3450 4900 3450
+Wire Wire Line
+	4900 3450 4900 3300
+Wire Wire Line
+	4900 3300 5150 3300
+$Comp
+L Connector_Generic:Conn_01x06 J0
+U 1 1 5FAAD873
+P 6700 3300
+F 0 "J0" H 6650 2850 50  0000 L CNN
+F 1 "Conn_01x06" H 6450 2750 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6700 3300 50  0001 C CNN
+F 3 "~" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 6750 3650 0    59   ~ 0
+VIN\nGND\n3vo\nInt\nSDA\nSCL
+Wire Wire Line
+	6500 3200 6350 3200
+Wire Wire Line
+	6350 3200 6350 2900
+Wire Wire Line
+	6350 2900 5850 2900
+NoConn ~ 6500 3300
+NoConn ~ 6500 3400
+Text GLabel 6500 3600 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 5150 2800 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 5150 2900 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 6500 3500 0    50   Input ~ 0
+I2C_SDA
+Text Notes 6550 3000 0    50   ~ 0
+TSL2591
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5FA76EB2
+P 3750 4800
+F 0 "#PWR0102" H 3750 4650 50  0001 C CNN
+F 1 "+3V3" H 3765 4973 50  0000 C CNN
+F 2 "" H 3750 4800 50  0001 C CNN
+F 3 "" H 3750 4800 50  0001 C CNN
+	1    3750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5100 4000 5200
+Connection ~ 4000 5200
+Wire Wire Line
+	4000 5200 4000 5300
+$Comp
+L Device:C_Small C13
+U 1 1 5FA8844F
+P 2950 5150
+F 0 "C13" H 2950 5250 50  0000 L CNN
+F 1 "10u" H 2950 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2950 5150 50  0001 C CNN
+F 3 "~" H 2950 5150 50  0001 C CNN
+	1    2950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5FA912BA
+P 3500 5150
+F 0 "C15" H 3500 5250 50  0000 L CNN
+F 1 "0.1u" H 3500 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3500 5150 50  0001 C CNN
+F 3 "~" H 3500 5150 50  0001 C CNN
+	1    3500 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5FA918A0
+P 3750 5150
+F 0 "C16" H 3750 5250 50  0000 L CNN
+F 1 "0.1u" H 3750 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3750 5150 50  0001 C CNN
+F 3 "~" H 3750 5150 50  0001 C CNN
+	1    3750 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5050 2950 5000
+Wire Wire Line
+	2950 5000 3200 5000
+Wire Wire Line
+	3200 5000 3200 5050
+Connection ~ 2950 5000
+Wire Wire Line
+	3500 5050 3500 5000
+Wire Wire Line
+	3500 5000 3750 5000
+Wire Wire Line
+	3750 5000 3750 5050
+Connection ~ 3750 5000
+$Comp
+L power:GND #PWR0103
+U 1 1 5FA7D54B
+P 2950 5300
+F 0 "#PWR0103" H 2950 5050 50  0001 C CNN
+F 1 "GND" H 2955 5127 50  0000 C CNN
+F 2 "" H 2950 5300 50  0001 C CNN
+F 3 "" H 2950 5300 50  0001 C CNN
+	1    2950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5300 2950 5250
+Wire Wire Line
+	3200 5250 3200 5300
+Connection ~ 3200 5300
+Wire Wire Line
+	3500 5250 3500 5300
+Wire Wire Line
+	3750 5250 3750 5300
+Connection ~ 2950 5300
+$Comp
+L Device:C_Small C9
+U 1 1 5FAACF53
+P 6050 5000
+F 0 "C9" H 5900 5050 50  0000 L CNN
+F 1 "0.22u" H 5900 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6050 5000 50  0001 C CNN
+F 3 "~" H 6050 5000 50  0001 C CNN
+	1    6050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5FAACF59
+P 6600 5000
+F 0 "C10" H 6692 5046 50  0000 L CNN
+F 1 "10u" H 6692 4955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6600 5000 50  0001 C CNN
+F 3 "~" H 6600 5000 50  0001 C CNN
+	1    6600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5FAACF5F
+P 7100 5000
+F 0 "C11" H 7192 5046 50  0000 L CNN
+F 1 "0.1u" H 7192 4955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7100 5000 50  0001 C CNN
+F 3 "~" H 7100 5000 50  0001 C CNN
+	1    7100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5FAACF65
+P 7450 5000
+F 0 "C12" H 7542 5046 50  0000 L CNN
+F 1 "0.01u" H 7542 4955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7450 5000 50  0001 C CNN
+F 3 "~" H 7450 5000 50  0001 C CNN
+	1    7450 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5300 4000 5300
+Wire Wire Line
+	4150 5200 4000 5200
+Wire Wire Line
+	4150 5100 4000 5100
+$Comp
+L MPPT-rescue:ADM3055E U1
+U 1 1 5FA7F796
+P 4850 5400
+F 0 "U1" H 4850 6197 60  0000 C CNN
+F 1 "ADM3055E" H 4850 6091 60  0000 C CNN
+F 2 "irradianceboard:ADM3055EBRIZ" H 4850 5500 60  0001 C CNN
+F 3 "" H 4850 5500 60  0001 C CNN
+	1    4850 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4900 5700 4900
+Wire Wire Line
+	5700 4900 5700 4950
+Wire Wire Line
+	5700 4950 5550 4950
+$Comp
+L Device:Ferrite_Bead_Small L2
+U 1 1 5FAB5F11
+P 6300 4900
+F 0 "L2" H 6200 4850 50  0000 C CNN
+F 1 "2k" H 6200 5000 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" V 6230 4900 50  0001 C CNN
+F 3 "~" H 6300 4900 50  0001 C CNN
+	1    6300 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 5100 6050 5150
+Connection ~ 6050 5150
+Wire Wire Line
+	6050 5150 6200 5150
+Wire Wire Line
+	6050 4900 6200 4900
+Connection ~ 6050 4900
+Wire Wire Line
+	6400 4900 6600 4900
+Wire Wire Line
+	6400 5150 6600 5150
+Wire Wire Line
+	6600 5150 6600 5100
+Wire Wire Line
+	6600 4900 7100 4900
+Connection ~ 6600 4900
+Wire Wire Line
+	6600 5150 7100 5150
+Wire Wire Line
+	7100 5150 7100 5100
+Connection ~ 6600 5150
+Wire Wire Line
+	7100 4900 7450 4900
+Connection ~ 7100 4900
+Wire Wire Line
+	7450 5100 7450 5150
+Wire Wire Line
+	7450 5150 7100 5150
+Connection ~ 7100 5150
+$Comp
+L MPPT-rescue:R R10
+U 1 1 5FAC27E9
+P 8050 5450
+F 0 "R10" V 8150 5400 50  0000 L CNN
+F 1 "60" V 8050 5400 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7980 5450 50  0001 C CNN
+F 3 "" H 8050 5450 50  0001 C CNN
+	1    8050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MPPT-rescue:R R9
+U 1 1 5FAC5664
+P 8250 5450
+F 0 "R9" V 8350 5400 50  0000 L CNN
+F 1 "60" V 8250 5400 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8180 5450 50  0001 C CNN
+F 3 "" H 8250 5450 50  0001 C CNN
+	1    8250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small L3
+U 1 1 5FACDCBB
+P 6300 5150
+F 0 "L3" H 6200 5100 50  0000 C CNN
+F 1 "2k" H 6200 5250 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" V 6230 5150 50  0001 C CNN
+F 3 "~" H 6300 5150 50  0001 C CNN
+	1    6300 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L MPPT-rescue:CANConnector J4
+U 1 1 5FACE509
+P 9300 5050
+F 0 "J4" H 9350 4800 60  0000 R CNN
+F 1 "CAN_In" H 9450 5300 60  0000 R CNN
+F 2 "irradianceboard:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical" H 9450 5350 60  0001 C CNN
+F 3 "" H 9450 5350 60  0001 C CNN
+	1    9300 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MPPT-rescue:CANConnector J5
+U 1 1 5FACF8FF
+P 9300 5600
+F 0 "J5" H 9350 5350 60  0000 R CNN
+F 1 "CAN_Out" H 9500 5850 60  0000 R CNN
+F 2 "irradianceboard:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical" H 9450 5900 60  0001 C CNN
+F 3 "" H 9450 5900 60  0001 C CNN
+	1    9300 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4900 8750 4900
+Connection ~ 7450 4900
+$Comp
+L MPPT-rescue:CDSOT23-T24CAN U7
+U 1 1 5FAD265B
+P 8250 4650
+F 0 "U7" H 8250 4947 60  0000 C CNN
+F 1 "CDSOT23-T24CAN" H 8250 4841 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 8250 4650 60  0001 C CNN
+F 3 "" H 8250 4650 60  0001 C CNN
+	1    8250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5150 7800 5000
+Wire Wire Line
+	7800 5000 8650 5000
+Wire Wire Line
+	7450 5150 7800 5150
+Connection ~ 7450 5150
+$Comp
+L MPPT-rescue:R R25
+U 1 1 5FAD93D2
+P 5850 5950
+F 0 "R25" V 5750 5950 50  0000 C CNN
+F 1 "0" V 5850 5950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5780 5950 50  0001 C CNN
+F 3 "" H 5850 5950 50  0001 C CNN
+	1    5850 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 5950 5700 5950
+Wire Wire Line
+	6600 5150 6600 5350
+Wire Wire Line
+	6600 5350 6150 5350
+Wire Wire Line
+	5550 5250 5650 5250
+Wire Wire Line
+	5650 5250 5650 5350
+Connection ~ 5650 5350
+Wire Wire Line
+	5650 5350 5550 5350
+Wire Wire Line
+	6000 5950 6150 5950
+Wire Wire Line
+	6150 5950 6150 5350
+Connection ~ 6150 5350
+Wire Wire Line
+	6150 5350 5650 5350
+Wire Wire Line
+	8950 5450 8750 5450
+Wire Wire Line
+	8750 5450 8750 4900
+Connection ~ 8750 4900
+Wire Wire Line
+	8750 4900 8950 4900
+Wire Wire Line
+	8950 5550 8650 5550
+Wire Wire Line
+	8650 5550 8650 5000
+Connection ~ 8650 5000
+Wire Wire Line
+	8650 5000 8950 5000
+Wire Wire Line
+	8650 5000 8650 4650
+Wire Wire Line
+	8650 4650 8600 4650
+Wire Wire Line
+	8950 5200 8550 5200
+Wire Wire Line
+	8550 5200 8550 5750
+Connection ~ 8550 5750
+Wire Wire Line
+	8550 5750 8950 5750
+Wire Wire Line
+	8950 5100 8450 5100
+Wire Wire Line
+	8450 5100 8450 5650
+Connection ~ 8450 5650
+Wire Wire Line
+	8450 5650 8950 5650
+Wire Wire Line
+	8050 5600 8050 5650
+Wire Wire Line
+	8250 5600 8250 5750
+Connection ~ 8050 5650
+Wire Wire Line
+	8050 5650 8450 5650
+Connection ~ 8250 5750
+Wire Wire Line
+	8250 5750 8550 5750
+Wire Wire Line
+	5550 5650 7850 5650
+Wire Wire Line
+	7900 4700 7900 5750
+Connection ~ 7900 5750
+Wire Wire Line
+	7900 5750 8250 5750
+Wire Wire Line
+	5550 5750 7900 5750
+Wire Wire Line
+	7900 4600 7850 4600
+Wire Wire Line
+	7850 4600 7850 5650
+Connection ~ 7850 5650
+Wire Wire Line
+	7850 5650 8050 5650
+NoConn ~ 5550 5850
+NoConn ~ 4150 5900
+NoConn ~ 4150 5800
+NoConn ~ 4150 5700
+Wire Wire Line
+	5550 4850 5600 4850
+Wire Wire Line
+	5600 4850 5600 4700
+Wire Wire Line
+	5600 4700 6600 4700
+Wire Wire Line
+	6600 4700 6600 4900
+Wire Wire Line
+	5550 5150 5700 5150
+Wire Wire Line
+	5700 5050 5700 5150
+Connection ~ 5700 5150
+Wire Wire Line
+	5700 5150 6050 5150
+Wire Wire Line
+	5550 5050 5700 5050
+Wire Wire Line
+	8050 5200 8050 5300
+Wire Wire Line
+	8250 5200 8250 5300
+Wire Wire Line
+	3750 4800 3750 5000
+Wire Wire Line
+	3200 5300 2950 5300
+$Comp
+L Device:C_Small C14
+U 1 1 5FA90DE1
+P 3200 5150
+F 0 "C14" H 3200 5250 50  0000 L CNN
+F 1 "0.1u" H 3200 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3200 5150 50  0001 C CNN
+F 3 "~" H 3200 5150 50  0001 C CNN
+	1    3200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4900 4350 4900
+Wire Wire Line
+	3500 5300 3750 5300
+Wire Wire Line
+	3200 5300 3500 5300
+Wire Wire Line
+	2950 4800 2950 4900
+Connection ~ 3500 5300
+$Comp
+L power:+5V #PWR0104
+U 1 1 5FA752A5
+P 2950 4800
+F 0 "#PWR0104" H 2950 4650 50  0001 C CNN
+F 1 "+5V" H 2965 4973 50  0000 C CNN
+F 2 "" H 2950 4800 50  0001 C CNN
+F 3 "" H 2950 4800 50  0001 C CNN
+	1    2950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5300 4000 5300
+Connection ~ 3750 5300
+Connection ~ 4000 5300
+Wire Wire Line
+	3750 5000 4150 5000
+Wire Wire Line
+	4150 4900 2950 4900
+Connection ~ 4150 4900
+Connection ~ 2950 4900
+Wire Wire Line
+	2950 4900 2950 5000
+Wire Wire Line
+	4150 5500 3800 5500
+Wire Wire Line
+	4150 5600 3800 5600
+Text GLabel 4600 3200 1    50   Input ~ 0
+CAN_Tx
+Text GLabel 4600 4000 1    50   Input ~ 0
+CAN_Rx
+Text GLabel 3800 5500 0    50   Input ~ 0
+CAN_Tx
+Text GLabel 3800 5600 0    50   Input ~ 0
+CAN_Rx
+NoConn ~ 5150 3000
+NoConn ~ 5150 3100
+NoConn ~ 5150 3400
+NoConn ~ 5150 3500
+NoConn ~ 5150 3600
+NoConn ~ 5150 3700
+NoConn ~ 5150 3800
+NoConn ~ 5150 3900
+NoConn ~ 5150 4100
+NoConn ~ 5150 4200
+NoConn ~ 5850 4200
+NoConn ~ 5850 4100
+NoConn ~ 5850 4000
+NoConn ~ 5850 3900
+NoConn ~ 5850 3800
+NoConn ~ 5850 3700
+NoConn ~ 5850 3600
+NoConn ~ 5850 3500
+NoConn ~ 5850 3400
+NoConn ~ 5850 3300
+NoConn ~ 5850 3200
+NoConn ~ 5850 3000
+$Comp
+L MPPT-rescue:PWR_FLAG #FLG0101
+U 1 1 5FBE947A
+P 6350 2900
+F 0 "#FLG0101" H 6350 2975 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 3073 50  0000 C CNN
+F 2 "" H 6350 2900 50  0001 C CNN
+F 3 "" H 6350 2900 50  0001 C CNN
+	1    6350 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 2900
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FC9EC2B
+P 7200 3100
+F 0 "H1" H 7300 3146 50  0000 L CNN
+F 1 "MountingHole" H 7300 3055 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 7200 3100 50  0001 C CNN
+F 3 "~" H 7200 3100 50  0001 C CNN
+	1    7200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FCA05AE
+P 7200 3550
+F 0 "H2" H 7300 3596 50  0000 L CNN
+F 1 "MountingHole" H 7300 3505 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2" H 7200 3550 50  0001 C CNN
+F 3 "~" H 7200 3550 50  0001 C CNN
+	1    7200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FCA3FCC
+P 4150 5000
+F 0 "#FLG0102" H 4150 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 5173 50  0000 C CNN
+F 2 "" H 4150 5000 50  0001 C CNN
+F 3 "~" H 4150 5000 50  0001 C CNN
+	1    4150 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 5000
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FCA53DD
+P 2950 4900
+F 0 "#FLG0103" H 2950 4975 50  0001 C CNN
+F 1 "PWR_FLAG" V 2950 5027 50  0000 L CNN
+F 2 "" H 2950 4900 50  0001 C CNN
+F 3 "~" H 2950 4900 50  0001 C CNN
+	1    2950 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5FCA6034
+P 2950 5300
+F 0 "#FLG0104" H 2950 5375 50  0001 C CNN
+F 1 "PWR_FLAG" V 2950 5427 50  0000 L CNN
+F 2 "" H 2950 5300 50  0001 C CNN
+F 3 "~" H 2950 5300 50  0001 C CNN
+	1    2950 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5FCB04AA
+P 5650 5250
+F 0 "#FLG0105" H 5650 5325 50  0001 C CNN
+F 1 "PWR_FLAG" V 5650 5378 50  0000 L CNN
+F 2 "" H 5650 5250 50  0001 C CNN
+F 3 "~" H 5650 5250 50  0001 C CNN
+	1    5650 5250
+	0    1    1    0   
+$EndComp
+Connection ~ 5650 5250
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5FCB1788
+P 8950 4900
+F 0 "#FLG0106" H 8950 4975 50  0001 C CNN
+F 1 "PWR_FLAG" H 8950 5073 50  0000 C CNN
+F 2 "" H 8950 4900 50  0001 C CNN
+F 3 "~" H 8950 4900 50  0001 C CNN
+	1    8950 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 8950 4900
+$Comp
+L MPPT-rescue:Jumper_NO_Small JP1
+U 1 1 5FB266D0
+P 8150 5200
+F 0 "JP1" H 8150 5150 50  0000 C CNN
+F 1 "Termination Resistors" H 8150 5250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8150 5200 50  0001 C CNN
+F 3 "" H 8150 5200 50  0001 C CNN
+	1    8150 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 3100 2    50   Input ~ 0
+vin
+Text GLabel 6500 3100 1    50   Input ~ 0
+vin
+Text Notes 4500 2700 0    118  ~ 24
+Nucleo
+Text Notes 6650 5500 0    118  ~ 24
+CAN Circuit
+$Comp
+L power:GND #PWR0105
+U 1 1 5FDDBC9A
+P 7050 4200
+F 0 "#PWR0105" H 7050 3950 50  0001 C CNN
+F 1 "GND" H 7055 4027 50  0000 C CNN
+F 2 "" H 7050 4200 50  0001 C CNN
+F 3 "" H 7050 4200 50  0001 C CNN
+	1    7050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5FDD791C
+P 7750 4050
+F 0 "J6" H 7830 4042 50  0000 L CNN
+F 1 "Battery" H 7830 3951 50  0000 L CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 7750 4050 50  0001 C CNN
+F 3 "~" H 7750 4050 50  0001 C CNN
+	1    7750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MPPT-rescue:+9VA #PWR0107
+U 1 1 5FDF1BB8
+P 5950 2800
+F 0 "#PWR0107" H 5950 2675 50  0001 C CNN
+F 1 "+9VA" V 5965 2928 50  0000 L CNN
+F 2 "" H 5950 2800 50  0001 C CNN
+F 3 "" H 5950 2800 50  0001 C CNN
+	1    5950 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2800 5850 2800
+$Comp
+L Device:C_Small C17
+U 1 1 5FE00119
+P 7250 4100
+F 0 "C17" H 7342 4146 50  0000 L CNN
+F 1 "0.1u" H 7342 4055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7250 4100 50  0001 C CNN
+F 3 "~" H 7250 4100 50  0001 C CNN
+	1    7250 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4000 7450 4050
+Wire Wire Line
+	7450 4050 7550 4050
+Wire Wire Line
+	7550 4150 7450 4150
+Wire Wire Line
+	7450 4150 7450 4200
+Connection ~ 7250 4000
+Wire Wire Line
+	7250 4000 7450 4000
+Connection ~ 7250 4200
+Wire Wire Line
+	7250 4200 7450 4200
+Wire Wire Line
+	7050 4200 7250 4200
+$Comp
+L MPPT-rescue:+9VA #PWR0106
+U 1 1 5FDE8717
+P 7000 4000
+F 0 "#PWR0106" H 7000 3875 50  0001 C CNN
+F 1 "+9VA" V 7015 4127 50  0000 L CNN
+F 2 "" H 7000 4000 50  0001 C CNN
+F 3 "" H 7000 4000 50  0001 C CNN
+	1    7000 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 4000 7250 4000
+$EndSCHEMATC

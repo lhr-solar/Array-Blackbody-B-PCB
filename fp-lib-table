@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name L432KC)(type KiCad)(uri ${KIPRJMOD}/L432KC.pretty)(options "")(descr ""))
+  (lib (name irradianceboard)(type KiCad)(uri ${KIPRJMOD}/irradianceboard.pretty)(options "")(descr ""))
+)
