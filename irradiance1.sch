@@ -4,17 +4,17 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Standalone Irradiance Board"
+Date "2021-02-13"
+Rev "1.0"
+Comp "UTSVT"
+Comment1 "Matthew Yu"
+Comment2 "Jacob Pustilnik"
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Irradiance_board_parts:Nucleo_L432KC U2
+L irradiance1-rescue:Nucleo_L432KC-Irradiance_board_parts U2
 U 1 1 5FAA17C6
 P 5500 2650
 F 0 "U2" H 5500 2765 50  0000 C CNN
@@ -299,7 +299,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 5100 4000 5100
 $Comp
-L MPPT-rescue:ADM3055E U1
+L irradiance1-rescue:ADM3055E-MPPT-rescue U1
 U 1 1 5FA7F796
 P 4850 5400
 F 0 "U1" H 4850 6197 60  0000 C CNN
@@ -357,7 +357,7 @@ Wire Wire Line
 	7450 5150 7100 5150
 Connection ~ 7100 5150
 $Comp
-L MPPT-rescue:R R10
+L irradiance1-rescue:R-MPPT-rescue R10
 U 1 1 5FAC27E9
 P 8050 5450
 F 0 "R10" V 8150 5400 50  0000 L CNN
@@ -368,7 +368,7 @@ F 3 "" H 8050 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:R R9
+L irradiance1-rescue:R-MPPT-rescue R9
 U 1 1 5FAC5664
 P 8250 5450
 F 0 "R9" V 8350 5400 50  0000 L CNN
@@ -390,7 +390,7 @@ F 3 "~" H 6300 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MPPT-rescue:CANConnector J4
+L irradiance1-rescue:CANConnector-MPPT-rescue J4
 U 1 1 5FACE509
 P 9300 5050
 F 0 "J4" H 9350 4800 60  0000 R CNN
@@ -401,7 +401,7 @@ F 3 "" H 9450 5350 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:CANConnector J5
+L irradiance1-rescue:CANConnector-MPPT-rescue J5
 U 1 1 5FACF8FF
 P 9300 5600
 F 0 "J5" H 9350 5350 60  0000 R CNN
@@ -415,7 +415,7 @@ Wire Wire Line
 	7450 4900 8750 4900
 Connection ~ 7450 4900
 $Comp
-L MPPT-rescue:CDSOT23-T24CAN U7
+L irradiance1-rescue:CDSOT23-T24CAN-MPPT-rescue U7
 U 1 1 5FAD265B
 P 8250 4650
 F 0 "U7" H 8250 4947 60  0000 C CNN
@@ -433,7 +433,7 @@ Wire Wire Line
 	7450 5150 7800 5150
 Connection ~ 7450 5150
 $Comp
-L MPPT-rescue:R R25
+L irradiance1-rescue:R-MPPT-rescue R25
 U 1 1 5FAD93D2
 P 5850 5950
 F 0 "R25" V 5750 5950 50  0000 C CNN
@@ -628,7 +628,7 @@ NoConn ~ 5850 3300
 NoConn ~ 5850 3200
 NoConn ~ 5850 3000
 $Comp
-L MPPT-rescue:PWR_FLAG #FLG0101
+L irradiance1-rescue:PWR_FLAG-MPPT-rescue #FLG0101
 U 1 1 5FBE947A
 P 6350 2900
 F 0 "#FLG0101" H 6350 2975 50  0001 C CNN
@@ -720,7 +720,7 @@ F 3 "~" H 8950 4900 50  0001 C CNN
 $EndComp
 Connection ~ 8950 4900
 $Comp
-L MPPT-rescue:Jumper_NO_Small JP1
+L irradiance1-rescue:Jumper_NO_Small-MPPT-rescue JP1
 U 1 1 5FB266D0
 P 8150 5200
 F 0 "JP1" H 8150 5150 50  0000 C CNN
@@ -761,7 +761,7 @@ F 3 "~" H 7750 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MPPT-rescue:+9VA #PWR0107
+L irradiance1-rescue:+9VA-MPPT-rescue #PWR0107
 U 1 1 5FDF1BB8
 P 5950 2800
 F 0 "#PWR0107" H 5950 2675 50  0001 C CNN
@@ -801,7 +801,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 4200 7250 4200
 $Comp
-L MPPT-rescue:+9VA #PWR0106
+L irradiance1-rescue:+9VA-MPPT-rescue #PWR0106
 U 1 1 5FDE8717
 P 7000 4000
 F 0 "#PWR0106" H 7000 3875 50  0001 C CNN

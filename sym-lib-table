@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Irradiance_board_parts)(type Legacy)(uri "C:/Users/Jacob Pustilnik/Documents/KiCAD/Libraries/Irradiance_board_parts.lib")(options "")(descr ""))
+  (lib (name irradiance1-rescue)(type Legacy)(uri ${KIPRJMOD}/irradiance1-rescue.lib)(options "")(descr ""))
 )
