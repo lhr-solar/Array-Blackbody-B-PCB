@@ -1,4 +1,6 @@
 (sym_lib_table
-  (lib (name Irradiance_board_parts)(type Legacy)(uri "C:/Users/Jacob Pustilnik/Documents/KiCAD/Libraries/Irradiance_board_parts.lib")(options "")(descr ""))
-  (lib (name irradiance1-rescue)(type Legacy)(uri ${KIPRJMOD}/irradiance1-rescue.lib)(options "")(descr ""))
+  (lib (name "Irradiance_board_parts")(type "Legacy")(uri "${KIPRJMOD}/irradiance1-cache.lib")(options "")(descr ""))
+  (lib (name "irradiance1-rescue")(type "Legacy")(uri "${KIPRJMOD}/irradiance1-rescue.lib")(options "")(descr ""))
+  (lib (name "SM0402GC")(type "Legacy")(uri "${KIPRJMOD}/SM0402GC.lib")(options "")(descr ""))
+  (lib (name "TSL25911FN")(type "Legacy")(uri "${KIPRJMOD}/TSL25911FN.lib")(options "")(descr ""))
 )
