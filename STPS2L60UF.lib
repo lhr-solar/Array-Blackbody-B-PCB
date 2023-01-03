@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model STPS2L60UF
+#/716444/72665/2.49/2/2/Schottky Diode
+DEF STPS2L60UF D 0 30 Y Y 1 F N
+F0 "D" 500 350 50 H V L CNN
+F1 "STPS2L60UF" 500 250 50 H V L CNN
+F2 "SODFL5436X110N" 500 150 50 H I L CNN
+F3 "https://ad.componentsearchengine.com/Datasheets/2/STPS2L60UF.pdf" 500 50 50 H I L CNN
+F4 "STMICROELECTRONICS - STPS2L60UF - Schottky Rectifier, 60 V, 2 A, Single, DO-221AA, 2 Pins, 770 mV" 500 -50 50 H I L CNN "Description"
+F5 "1.1" 500 -150 50 H I L CNN "Height"
+F6 "511-STPS2L60UF" 500 -250 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STPS2L60UF?qs=xEJ61ozf1a0R1%2FzstT3SWw%3D%3D" 500 -350 50 H I L CNN "Mouser Price/Stock"
+F8 "STMicroelectronics" 500 -450 50 H I L CNN "Manufacturer_Name"
+F9 "STPS2L60UF" 500 -550 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 100 0 100 R 50 50 0 0 O
+X ~ 2 700 0 100 L 50 50 0 0 I
+P 2 0 1 6 300 100 300 -100 N
+P 3 0 1 6 300 100 340 100 340 60 N
+P 3 0 1 6 300 -100 260 -100 260 -60 N
+P 2 0 1 6 200 0 300 0 N
+P 2 0 1 6 500 0 600 0 N
+P 4 0 1 10 300 0 500 100 500 -100 300 0 F
+ENDDRAW
+ENDDEF
+#
+#End Library
